@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sai Krishna | AI/ML Engineer</title>
+<meta name="description" content="Sai Krishna, AI/ML Engineer building production Generative AI, RAG, agentic AI and MLOps systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f8fb; --surface:#ffffff; --text:#14171f; --muted:#5b6474; --line:#e3e7ee;
+  --accent:#2f5496; --accent-soft:#e8eef8; --chip:#f0f3f8;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0e1117; --surface:#161b24; --text:#e8ebf1; --muted:#9aa3b2; --line:#262d3a;
+         --accent:#7aa2e8; --accent-soft:#1c2740; --chip:#1d2330; }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+nav .brand{font-weight:700;color:var(--text)}
+nav ul{display:flex;gap:22px;list-style:none;font-size:14px}
+nav ul a{color:var(--muted)}
+nav ul a:hover{color:var(--text);text-decoration:none}
+
+header{padding:84px 0 56px}
+.eyebrow{font:500 13px/1 "JetBrains Mono",monospace;color:var(--accent);letter-spacing:.04em;margin-bottom:18px}
+h1{font-size:clamp(36px,6vw,56px);line-height:1.08;letter-spacing:-.02em;margin-bottom:14px}
+.role{font-size:clamp(18px,2.4vw,22px);color:var(--muted);font-weight:500;margin-bottom:22px}
+.lead{max-width:680px;color:var(--muted);font-size:17px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-block;padding:11px 20px;border-radius:8px;font-weight:600;font-size:15px;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn:hover{text-decoration:none;transform:translateY(-1px)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:48px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px}
+.stat b{display:block;font-size:26px;color:var(--accent);letter-spacing:-.01em}
+.stat span{font-size:13px;color:var(--muted)}
+
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:26px;letter-spacing:-.01em;margin-bottom:26px}
+h2 small{display:block;font:500 12px/1 "JetBrains Mono",monospace;color:var(--accent);letter-spacing:.06em;margin-bottom:10px;text-transform:uppercase}
+
+.job{display:grid;grid-template-columns:170px 1fr;gap:24px;padding:22px 0;border-bottom:1px dashed var(--line)}
+.job:last-child{border-bottom:0}
+.when{font-size:14px;color:var(--muted)}
+.job h3{font-size:18px}
+.job h3 span{color:var(--accent)}
+.job .where{font-size:14px;color:var(--muted);margin-bottom:10px}
+.job ul{padding-left:18px;color:var(--muted)}
+.job li{margin:4px 0}
+.job li b{color:var(--text);font-weight:600}
+
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px;display:flex;flex-direction:column}
+.card h3{font-size:18px;margin-bottom:8px}
+.status{display:inline-block;font:600 11px/1 Inter,sans-serif;letter-spacing:.04em;text-transform:uppercase;color:#9a5b00;background:#fff3dc;border-radius:999px;padding:5px 9px;margin-bottom:10px}
+@media (prefers-color-scheme: dark){.status{color:#f5c26b;background:#3a2c12}}
+.card p{color:var(--muted);font-size:15px;flex:1}
+.card ul{color:var(--muted);font-size:14px;padding-left:18px;margin:12px 0}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0}
+.tag{font:500 12px/1 "JetBrains Mono",monospace;background:var(--accent-soft);color:var(--accent);padding:6px 9px;border-radius:6px}
+.card .links{display:flex;gap:16px;font-weight:600;font-size:14px}
+
+.skills{display:grid;grid-template-columns:200px 1fr;gap:14px 24px}
+.skills dt{font-weight:600;font-size:15px;padding-top:4px}
+.skills dd{display:flex;flex-wrap:wrap;gap:6px}
+.chip{background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:4px 11px;font-size:13px}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.list{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.list li{list-style:none;padding:9px 0;border-bottom:1px solid var(--line);font-size:15px}
+.list li:last-child{border-bottom:0}
+.list .sub{color:var(--muted);font-size:13px}
+
+.contact{text-align:center}
+.contact p{color:var(--muted);max-width:560px;margin:0 auto 24px}
+.contact .cta{justify-content:center}
+footer{padding:28px 0;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+
+@media (max-width:760px){
+  nav ul{display:none}
+  .stats{grid-template-columns:1fr 1fr}
+  .job{grid-template-columns:1fr;gap:6px}
+  .projects,.two{grid-template-columns:1fr}
+  .skills{grid-template-columns:1fr;gap:6px}
+  .skills dd{margin-bottom:12px}
+  header{padding:56px 0 40px}
+}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="brand" href="#">Sai Krishna</a>
+  <ul>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div></nav>
+
+<header><div class="wrap">
+  <div class="eyebrow">AI/ML ENGINEER · OPEN TO NEW ROLES</div>
+  <h1>Sai Krishna</h1>
+  <p class="role">Generative AI · RAG · Agentic AI · MLOps</p>
+  <p class="lead">I build production AI systems end to end, from requirements and architecture through deployment and monitoring. Right now that means RAG pipelines and LangGraph agents for enterprise document intelligence. Before that, I worked on fraud detection models that scored over a million banking transactions a day.</p>
+  <div class="cta">
+    <a class="btn primary" href="Sai_Krishna_AIML_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
+    <a class="btn" href="https://github.com/saikrishnav627" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="mailto:saikrishnav627@gmail.com">Email</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>4+ yrs</b><span>building ML &amp; AI systems</span></div>
+    <div class="stat"><b>1M+</b><span>transactions scored daily</span></div>
+    <div class="stat"><b>10K+</b><span>AI queries served per day</span></div>
+    <div class="stat"><b>25%</b><span>higher fraud recall</span></div>
+  </div>
+</div></header>
+
+<section id="experience"><div class="wrap">
+  <h2><small>Where I've worked</small>Experience</h2>
+
+  <div class="job">
+    <div class="when">Jan 2025 – Present</div>
+    <div>
+      <h3>AI/ML Engineer · <span>Adobe</span></h3>
+      <div class="where">San Francisco, CA · Enterprise Document Intelligence &amp; Agentic AI Platform</div>
+      <ul>
+        <li>Built end-to-end <b>RAG pipelines</b> with LangChain, Hugging Face and Pinecone, improving retrieval relevance <b>11%</b> and cutting document processing time <b>25%</b>.</li>
+        <li>Developed <b>LangGraph agentic workflows</b> with query decomposition, conditional routing and human-in-the-loop validation, reducing unsupported LLM responses <b>10%</b>.</li>
+        <li>Built <b>FastAPI</b> microservices with async inference, reducing latency <b>20%</b> while serving <b>10K+ queries/day</b>.</li>
+        <li>Created <b>LLM evaluation pipelines</b> for faithfulness, hallucination risk and regression testing, and shipped them on Docker, Kubernetes and CI/CD across AWS and Azure, cutting deployment time <b>30%</b>.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="when">Jan 2024 – Dec 2024</div>
+    <div>
+      <h3>AI/ML Research Assistant · <span>University of North Texas</span></h3>
+      <div class="where">Denton, TX · Deep Learning &amp; Computer Vision</div>
+      <ul>
+        <li>Researched <b>medical image classification</b> with TensorFlow, Keras and PyTorch, building reproducible training workflows.</li>
+        <li>Benchmarked <b>CNN, ResNet and VGG</b> models with transfer learning, data augmentation and hyperparameter tuning.</li>
+        <li>Ran error analysis with precision, recall, F1 and confusion matrices to find misclassification patterns.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="when">Jan 2022 – Dec 2023</div>
+    <div>
+      <h3>Machine Learning Engineer · <span>Wells Fargo</span></h3>
+      <div class="where">Hyderabad, India · Transaction Fraud Detection &amp; Risk Scoring</div>
+      <ul>
+        <li>Built <b>PySpark and Kafka</b> pipelines processing <b>1M+ transactions daily</b>, cutting processing time <b>30%</b>.</li>
+        <li>Trained <b>XGBoost</b> fraud classifiers that improved F1 <b>7%</b> and fraud recall <b>25%</b>, and tuned thresholds to cut false-positive alerts <b>18%</b>.</li>
+        <li>Served models through <b>FastAPI</b> on Kubernetes (AWS), with <b>23%</b> lower latency, <b>35%</b> faster deployments and MLflow monitoring.</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2><small>Things I've built</small>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <span class="status">In progress · building in public</span>
+      <h3>Enterprise RAG Knowledge Assistant</h3>
+      <p>Ask questions about a company knowledge base and get answers that cite the exact source passages. The assistant says so when the answer isn't in the documents.</p>
+      <ul>
+        <li>Section-aware chunking, Hugging Face embeddings, Pinecone search</li>
+        <li>Retrieval grounding and evaluation (hit rate, MRR, faithfulness) as a CI quality gate</li>
+      </ul>
+      <div class="tags"><span class="tag">LangChain</span><span class="tag">Hugging Face</span><span class="tag">Pinecone</span><span class="tag">FastAPI</span><span class="tag">Docker</span></div>
+      <div class="links"><a href="https://github.com/saikrishnav627/enterprise-rag-assistant" target="_blank" rel="noopener">Follow the build on GitHub →</a></div>
+    </div>
+    <div class="card">
+      <span class="status">In progress · building in public</span>
+      <h3>Agentic AI Workflow Automation</h3>
+      <p>A LangGraph multi-agent system that turns a plain-English request into a plan and runs it through internal tools, pausing for human sign-off before any high-risk action.</p>
+      <ul>
+        <li>Planner, retrieval, execution and validation agents with conditional routing</li>
+        <li>Human approval checkpoints with pause and resume through a REST API</li>
+      </ul>
+      <div class="tags"><span class="tag">LangGraph</span><span class="tag">LangChain</span><span class="tag">FastAPI</span><span class="tag">AWS</span><span class="tag">Docker</span></div>
+      <div class="links"><a href="https://github.com/saikrishnav627/agentic-workflow-automation" target="_blank" rel="noopener">Follow the build on GitHub →</a></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2><small>Toolbox</small>Skills</h2>
+  <dl class="skills">
+    <dt>Generative AI &amp; RAG</dt><dd><span class="chip">RAG</span><span class="chip">Agentic AI</span><span class="chip">Multi-Agent Systems</span><span class="chip">Semantic Chunking</span><span class="chip">Hybrid Search</span><span class="chip">Reranking</span><span class="chip">Human-in-the-Loop</span></dd>
+    <dt>LLM Frameworks</dt><dd><span class="chip">LangChain</span><span class="chip">LangGraph</span><span class="chip">CrewAI</span><span class="chip">Pinecone</span><span class="chip">FAISS</span><span class="chip">Chroma DB</span></dd>
+    <dt>LLMs</dt><dd><span class="chip">Amazon Bedrock (Claude)</span><span class="chip">GPT-4/5</span><span class="chip">LLaMA</span><span class="chip">Gemini</span><span class="chip">Prompt Engineering</span></dd>
+    <dt>LLM Evaluation</dt><dd><span class="chip">Faithfulness</span><span class="chip">Hallucination Detection</span><span class="chip">LLM-as-Judge</span><span class="chip">RAGAS</span><span class="chip">LangSmith</span></dd>
+    <dt>ML &amp; Deep Learning</dt><dd><span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">Keras</span><span class="chip">Scikit-learn</span><span class="chip">XGBoost</span><span class="chip">Hugging Face</span><span class="chip">CNN / ResNet / VGG</span></dd>
+    <dt>MLOps</dt><dd><span class="chip">MLflow</span><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">Terraform</span><span class="chip">GitHub Actions</span><span class="chip">Drift Monitoring</span></dd>
+    <dt>Cloud</dt><dd><span class="chip">AWS (SageMaker, Bedrock, Lambda, EKS)</span><span class="chip">Azure (ML, AI Search, OpenAI)</span><span class="chip">GCP Vertex AI</span></dd>
+    <dt>Data &amp; APIs</dt><dd><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">PySpark</span><span class="chip">Kafka</span><span class="chip">Airflow</span><span class="chip">FastAPI</span><span class="chip">PostgreSQL</span></dd>
+  </dl>
+</div></section>
+
+<section id="certifications"><div class="wrap">
+  <h2><small>Credentials</small>Certifications &amp; Education</h2>
+  <div class="two">
+    <ul class="list">
+      <li>Microsoft Certified: Azure Data Fundamentals<div class="sub">DP-900</div></li>
+      <li>Microsoft Certified: Power BI Data Analyst Associate<div class="sub">PL-300</div></li>
+      <li>AWS Certified Cloud Practitioner<div class="sub">Amazon Web Services</div></li>
+      <li>Claude 101<div class="sub">Anthropic</div></li>
+      <li>AI Fluency: Framework &amp; Foundations<div class="sub">Anthropic</div></li>
+    </ul>
+    <ul class="list">
+      <li>Master of Science, Business Analytics<div class="sub">University of North Texas · CGPA 3.75/4.0</div></li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <h2><small>Say hello</small>Let's talk</h2>
+  <p>I'm open to AI/ML Engineer and Generative AI roles. The quickest way to reach me is email.</p>
+  <div class="cta">
+    <a class="btn primary" href="mailto:saikrishnav627@gmail.com">saikrishnav627@gmail.com</a>
+    <a class="btn" href="tel:+19403341618">+1 (940) 334-1618</a>
+  </div>
+</div></section>
+
+<footer>© 2026 Sai Krishna</footer>
+</body>
+</html>
